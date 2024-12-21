@@ -1,10 +1,13 @@
-import type * as Party from "partykit/server";
-
+import type * as Party from "@maryam-dev/partykit/server";
+import os from "os";
 export default class Server implements Party.Server {
   count = 0;
 
   constructor(readonly room: Party.Room) {}
-
+  async onStart() {
+    console.log(`Server started!`);
+    console.log(`Number of CPUs: ${os.cpus().length}`);
+  }
   onConnect(conn: Party.Connection, ctx: Party.ConnectionContext) {
     // A websocket just connected!
     console.log(
