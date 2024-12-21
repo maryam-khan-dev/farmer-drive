@@ -1,0 +1,10 @@
+{
+  "$schema": "https://www.partykit.io/schema.json",
+  "name": "farmer-drive",
+  "main": "party/server.ts",
+  "compatibilityDate": "2024-12-20",
+  "serve": {
+    "path": "public",
+    "build": "app/client.tsx"
+  }
+}
