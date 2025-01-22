@@ -3,16 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "partykit dev --live",
+    "dev": "partykit dev",
     "deploy": "partykit deploy"
   },
   "dependencies": {
-    "@maryam-dev/partykit": "^0.0.111",
+    "@maryam-dev/partykit": "^0.0.360",
     "partysocket": "^1.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@types/node": "^22.10.7",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.5.4"

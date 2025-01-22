@@ -1,12 +1,14 @@
 import type * as Party from "@maryam-dev/partykit/server";
 import os from "os";
+import util from "util"
 export default class Server implements Party.Server {
   count = 0;
 
   constructor(readonly room: Party.Room) {}
   async onStart() {
     console.log(`Server started!`);
-    console.log(`Number of CPUs: ${os.cpus().length}`);
+    // Log any other Node.js APIs like 'util', 'process', etc...
+    console.log(os.cpus(), process, util);
   }
   onConnect(conn: Party.Connection, ctx: Party.ConnectionContext) {
     // A websocket just connected!
